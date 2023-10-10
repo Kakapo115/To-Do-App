@@ -23,6 +23,8 @@ class App extends Component {
       selectedTaskId: "0",
       filter: "All Tasks",
     };
+    axios.defaults.baseURL = "https://twitter-clone-6p09.onrender.com/api";
+    axios.defaults.withCredentials = true;
   }
 
   handleFilterChange = (filter) => {
@@ -47,8 +49,6 @@ class App extends Component {
   };
 
   render() {
-    axios.defaults.baseURL = "https://twitter-clone-6p09.onrender.com/api";
-    axios.defaults.withCredentials = true;
     return (
       <Provider store={store}>
         <div className="App">
