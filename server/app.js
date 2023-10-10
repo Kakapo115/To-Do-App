@@ -2,10 +2,10 @@ import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import cors from "cors";
-import bodyparser from "body-parser"
+import bodyparser from "body-parser";
 
 // Add reference to the routes file
-var taskroute = require("./routes/api/taskroute");
+import taskroute from "./routes/api/taskroute";
 
 var app = express();
 dotenv.config();
