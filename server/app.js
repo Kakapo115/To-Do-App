@@ -8,6 +8,8 @@ import bodyparser from "body-parser"
 var taskroute = require("./routes/api/taskroute");
 
 var app = express();
+dotenv.config();
+
 //Add body-parser middleware to handle JSON data
 app.use(
   bodyparser.json(),

@@ -14,6 +14,8 @@ import { Container } from "reactstrap";
 
 import TaskFilter from "./components/taskFilter";
 
+import axios from "axios";
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -45,6 +47,8 @@ class App extends Component {
   };
 
   render() {
+    axios.defaults.baseURL = "https://twitter-clone-6p09.onrender.com/api";
+    axios.defaults.withCredentials = true;
     return (
       <Provider store={store}>
         <div className="App">
