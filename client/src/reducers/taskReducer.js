@@ -15,7 +15,7 @@ const initialState = {
   selectedTask: null,
 };
 
-export default function (state = initialState, action) {
+export const taskReducer = function (state = initialState, action) {
   switch (action.type) {
     case GET_TASKS: {
       return {
