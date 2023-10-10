@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 import cors from "cors";
 import bodyparser from "body-parser"
-import taskroute from "./routes/api/taskroute"
+import taskroute from "../routes/api/taskroute"
 
 var app = express();
 dotenv.config();
