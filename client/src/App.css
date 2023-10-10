@@ -1,0 +1,102 @@
+.del-btn {
+  margin-right: 0.5rem;
+}
+.fade-enter {
+  opacity: 0.1;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 1000ms ease-in;
+}
+.custom-datetime-picker {
+  /* Add your custom styles here */
+  /* For example, adjusting the width and font size */
+  width: 300px;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+}
+
+.app-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-container {
+  display: flex;
+  flex: 1;
+}
+
+.flex-item {
+  flex: 1;
+  margin: 10px;
+  background-color: #8956fe;
+  padding: 30px;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: #8956fe;
+}
+.navContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  background-color: #6337da;
+  min-height: 100vh;
+}
+
+.button {
+  width: 100%;
+  background-color: #8956fe;
+  border: 0px;
+  position: relative;
+  padding-right: 25px; /* Increase the padding to extend the arrow */
+}
+.button:hover {
+  background-color: #ae77ff;
+}
+.buttonSelected {
+  background-color: #d397ff;
+}
+
+.deleteButton {
+  background-color: red;
+  width: 50%;
+}
+
+.saveButton {
+  background-color: #00c900;
+  width: 50%;
+}
+
+
+.button .fa-arrow-right {
+  position: absolute;
+  right: 5px; /* Adjust the position of the arrow */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.taskListItem {
+  background-color: #8956fe;
+  border: 0px;
+}
+
+.header {
+  font-size: xxx-large;
+  font-weight: bold;
+  color: white;
+}
