@@ -1,11 +1,12 @@
-import express from "express";
-import dotenv from "dotenv";
-import mongoose from "mongoose";
-import cors from "cors";
-import bodyparser from "body-parser";
+// app.js
+var express = require("express");
+var dotenv = require("dotenv");
+var mongoose = require("mongoose");
+var cors = require("cors");
+var bodyparser = require("body-parser");
 
-// Add reference to the routes file
-import taskroute from "./routes/api/taskroute.js";
+// Use the CommonJS syntax to import taskroute
+var taskroute = require("./routes/api/taskroute");
 
 var app = express();
 dotenv.config();
