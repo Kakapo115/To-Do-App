@@ -30,7 +30,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://todoapp-6zt6.onrender.com",
+  "proxy": "https://todoapp-6zt6.onrender.com/api",
   "eslintConfig": {
     "extends": [
       "react-app",
