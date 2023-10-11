@@ -26,7 +26,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.defaults.baseURL = "https://todoapp-6zt6.onrender.com/api";
+    axios.defaults.baseURL = "https://todoapp-6zt6.onrender.com";
     axios.defaults.withCredentials = true;
   }
 
