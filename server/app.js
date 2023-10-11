@@ -15,7 +15,7 @@ dotenv.config();
 app.use(
   bodyparser.json(),
   cors({
-    origin: "https://master--ricky-syme-twitter-clone.netlify.app",
+    origin: "https://master--ricky-syme-to-do-app.netlify.app",
     credentials: true,
   })
 );
