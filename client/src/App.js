@@ -47,7 +47,7 @@ class App extends Component {
   };
 
   render() {
-    axios.defaults.baseURL = "https://twitter-clone-6p09.onrender.com/api";
+    axios.defaults.baseURL = "https://todoapp-6zt6.onrender.com/api";
     axios.defaults.withCredentials = true;
     return (
       <Provider store={store}>
