@@ -45,6 +45,11 @@ var port = process.env.PORT || 5000;
 
 app.use("/api/tasks", taskroute);
 
+app.get("/", function (req, res) {
+  res.json({ reply: "Route for HOME path." });
+  console.log("conencts to home route.")
+});
+
 app.listen(port, function () {
   connect();
   console.log("Server started on port:" + port);
