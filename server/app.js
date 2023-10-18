@@ -13,12 +13,13 @@ dotenv.config();
 
 //Add body-parser middleware to handle JSON data
 app.use(
-  bodyparser.json(),
   cors({
     origin: "https://master--ricky-syme-to-do-app.netlify.app",
     credentials: true,
   })
 );
+
+app.use(bodyparser.json());
 
 // Connect to mongo using mongoose.
 // Here's where we start using promises
