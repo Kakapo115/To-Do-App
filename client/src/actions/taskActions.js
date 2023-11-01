@@ -13,7 +13,7 @@ export const getTasks = () => {
   return (dispatch) => {
     return new Promise((resolve, reject) => {
       dispatch(setTasksLoading());
-      axios.get("/tasks")
+      axios.get("/api/tasks")
         .then((res) => {
           dispatch({
             type: GET_TASKS,
@@ -36,7 +36,7 @@ export const setTaskId = (taskId) => ({
 
 export const getTaskById = (taskId) => (dispatch) => {
   dispatch(setTasksLoading());
-  axios.get(`/tasks/${taskId}`).then((res) => {
+  axios.get(`/api/tasks/${taskId}`).then((res) => {
     dispatch({
       type: GET_TASK_BY_ID,
       payload: res.data,
@@ -47,7 +47,7 @@ export const getTaskById = (taskId) => (dispatch) => {
 export const deleteTask = (taskId) => (dispatch) => {
   return new Promise((resolve, reject) => {
     axios
-      .delete(`/tasks/${taskId}`)
+      .delete(`/api/tasks/${taskId}`)
       .then((res) => {
         dispatch({
           type: DELETE_TASK,
@@ -62,7 +62,7 @@ export const deleteTask = (taskId) => (dispatch) => {
 };
 
 export const addTask = (task) => (dispatch) => {
-  axios.post("/tasks", task).then((res) =>
+  axios.post("/api/tasks", task).then((res) =>
     dispatch({
       type: ADD_TASK,
       payload: res.data,
@@ -77,7 +77,7 @@ export const setTasksLoading = () => {
 };
 
 export const updateTask = (taskId, updatedTask) => (dispatch) => {
-  axios.put(`/tasks/${taskId}`, updatedTask).then((res) => {
+  axios.put(`/api/tasks/${taskId}`, updatedTask).then((res) => {
     dispatch({
       type: UPDATE_TASK,
       payload: res.data,
@@ -87,7 +87,7 @@ export const updateTask = (taskId, updatedTask) => (dispatch) => {
 
 export const filterTasksByDueDate = (filterType) => (dispatch) => {
   dispatch(setTasksLoading());
-  axios.get(`/tasks?filter=${filterType}`).then((res) =>
+  axios.get(`/api/tasks?filter=${filterType}`).then((res) =>
     dispatch({
       type: GET_TASKS,
       payload: res.data,
